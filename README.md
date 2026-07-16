@@ -24,6 +24,8 @@ src/
     debounce/        debounce with leading/trailing, cancel, flush, pending
   react-patterns/    Reusable React patterns
     compound-tabs/   Compound components via Context (Tabs/TabList/Tab/TabPanel)
+  redux-patterns/    Redux state-architecture patterns
+    sync-derived-data/  Source-of-truth + normalized cache joined on read
   ui-components/      Built-from-scratch accessible widgets
     autocomplete/    Combobox with keyboard nav + ARIA
 ```
@@ -34,6 +36,7 @@ src/
 | ------------- | ---------------- | ------------------------------------------------------- |
 | JS utilities  | `debounce`       | leading/trailing edges, `cancel`/`flush`/`pending`, `this` |
 | React pattern | Compound `Tabs`  | Context sharing, controlled/uncontrolled, ARIA tablist  |
+| Redux pattern | Sync derived data | normalized cache + selector join on read + listener middleware; no manual sync |
 | UI component  | `Autocomplete`   | substring filter, Up/Down/Enter/Escape, `aria-activedescendant` |
 
 ## Adding a new solution
